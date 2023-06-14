@@ -40,12 +40,13 @@
 .btn
 {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 button
 {
     cursor: pointer;
-    padding: 10px 30px;
+    padding: 10px;
     font-size: 2rem;
     margin-top: 10px;
     border-radius: 4px;
@@ -54,6 +55,7 @@ button
     border: 1.5px solid  var( --blue-main-color) ;
     font-weight: 400;
     transition: 0.5s ease;
+     margin-right: 8px;
 }
 button:hover
 {
@@ -100,6 +102,9 @@ button:hover
     }
    .img-mini{
        width: 100%;
+   }
+   button{
+    font-size: 1.5rem;
    }
 } 
 

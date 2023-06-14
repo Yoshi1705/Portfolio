@@ -10,6 +10,10 @@ function Home() {
     const handleClick = () =>{
          navigate('/contact')
     }
+
+     const secondHandler = () =>{
+       window.open("https://www.linkedin.com/in/yoshitha-peddireddy-6ba645253/",'_blank');
+     }
   return (
     <section id="home" className="home">
       <div className="wrapper">
@@ -25,6 +29,7 @@ function Home() {
         >
         <div className="btn">
           <button onClick={handleClick}>Hire Me</button>
+          <button onClick = {secondHandler}>Let's Connect</button>
         </div>
         </Animate>
          

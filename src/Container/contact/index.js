@@ -10,6 +10,8 @@ function Contact() {
 
   const form = useRef();
 
+  const [submit , setsubmit] = "false";
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -22,12 +24,18 @@ function Contact() {
       });
   };
 
+  const submitHandler = () =>{
+    setsubmit(true);
+  }
+
   return (
     <div>
     <Main 
      text = "CONTACT ME"
      icon = {<BsInfoCircleFill size = {40} />}
     />
+
+    {submit &&  <div className='submit-mssg'><p>"Your message was sent"</p></div>}
 
     <div className='contact'>
       <Animate play duration= {1} delay = {1} start = {{transform : 'translatX(-200px)'}} end = {{transform : 'translatX(0px)'}}>
@@ -53,13 +61,13 @@ function Contact() {
 
             </div>
 
-            <div className='div' >
-            <input  required name = "message" className= "input-des"  type = "text"/>
+            <div className='div des' >
+            <input  required name = "message" className= "input-des"  type = "text"  />
               <label className='label-desc'>DESCRIPTION</label>
             </div>
 
           </div>
-            <button className='buton'>Submit</button>
+            <button className='buton' onClick={submitHandler} >Submit</button>
          </div>
        </form>
     </div>
