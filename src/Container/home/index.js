@@ -30,7 +30,7 @@ function Home() {
          
       </div>
       <div className="mini">
-         <img  src = {img1}/>
+         <img  src = {img1} className="img-mini"/>
       </div>
     </section>
   );
