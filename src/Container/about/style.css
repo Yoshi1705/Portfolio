@@ -1,0 +1,115 @@
+
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-me
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+    margin-left: 15px;
+    width:50%;
+}
+ 
+.about-me p
+{
+   font-size: 1.5rem;
+   text-align: justify;
+   color:var(--blue-main-color);
+   line-height: 2.5rem;
+   font-family: 'Varela Round';
+   margin-bottom: 30px;
+}
+
+.about-icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner{
+    height: 330px;
+    width:340px;
+     background: radial-gradient(180px,var(--blue-main-color),transparent 90%);
+     position: relative;
+     border-radius: 50%;
+     border: 1.5px solid var(--blue-main-color);
+     margin-top: 33px;
+     margin-right: 30px;
+     animation: rotate 10s linear 1s infinite;
+}
+.inner div:nth-child(1)
+{
+  position: absolute;
+  top:-8%;
+  left:41%;
+}
+.inner div:nth-child(2)
+{
+    position: absolute;
+    right:-7%;
+    top:41.5%;
+
+}
+.inner div:nth-child(3)
+{
+    position: absolute;
+    bottom:-10%;
+    left:42%;
+
+}
+.inner div:nth-child(4)
+{
+    position: absolute;
+    left: -9%;
+    top:41%;
+
+}
+@keyframes  rotate {
+    100%
+    {
+        transform: rotate(360deg);
+    }
+    
+}
+@media only screen and (max-width:768px) {
+    .container
+    {
+        flex-direction: column;
+    }
+    .about-me
+    {
+        width: 80%;
+        margin-top:20px;
+        margin-left: 0;
+    }
+     
+     
+    .about-me h3
+    {
+        margin-bottom: 30px;
+    }
+    .about-me p{
+        font-size: 12px;
+        text-align:justify;
+         margin-bottom: 20px;
+    }
+    .about-icon
+    {
+        margin-top: 30px;
+        width: 95%;
+        height: 80%;
+        margin-left: 10px;
+    }
+    .inner
+    {
+        height:250px;
+        width:250px;
+    }
+    
+}

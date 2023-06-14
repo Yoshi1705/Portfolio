@@ -1,0 +1,29 @@
+
+
+.wrapper-text
+{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px dashed var( --blue-main-color);
+    flex-direction: row;
+}
+
+.wrap-text{
+    font-size: 20px;
+    font-weight: 700;
+     letter-spacing : 1.5px;
+     text-transform: capitalize;
+     color: var( --blue-main-color);
+     display: flex;
+     flex-grow: 1;
+
+}
+
+span .icon
+{
+    
+
+        color: var( --blue-main-color);
+    
+}

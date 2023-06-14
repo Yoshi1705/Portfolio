@@ -1,0 +1,107 @@
+ 
+.home
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    
+}
+ 
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+}
+.wrapper h1
+{
+    font-weight: 500;
+    background-image: linear-gradient(-225deg, #16aeef 0%, #66ccfb 29%, #5cfbfb 67%, #00b0ff 100%);
+  position: relative;
+    font-size: 4.5rem;
+    line-height: 6rem;
+    letter-spacing: 3px;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingEffectAnimation 2.5s steps(30,end);
+    
+   margin-bottom: 20px;
+
+}
+.btn
+{
+    display: flex;
+    justify-content: center;
+}
+button
+{
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: 2rem;
+    margin-top: 10px;
+    border-radius: 4px;
+    background: transparent;
+    color: var( --blue-main-color);
+    border: 1.5px solid  var( --blue-main-color) ;
+    font-weight: 400;
+    transition: 0.5s ease;
+}
+button:hover
+{
+    background-color:  rgb(151, 182, 202) ;
+    color: black;
+}
+
+@media only screen and (max-width:768px)
+{
+    .home
+    {
+        flex-direction: column;
+        justify-content: center;
+    }
+   .wrapper h1{
+      font-size: 3rem;
+      align-items: center;
+      justify-items: center;
+   }
+   .btn
+   {
+    margin-bottom: 30px;
+   }
+   .mini img{
+       width: 100%;
+   }
+} 
+
+@keyframes  typingEffectAnimation {
+    from{
+        width:0
+    }
+    to{
+        width: 100%;
+    }
+}
+.mini
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mini img
+{
+    border-radius: 50% ;
+    width:50%;
+    height: 50%;
+    border: 5px solid  var( --blue-main-color) ;
+    box-shadow: rgba(241, 235, 235, 0.838) 0px 0.0625em 0.0625em, rgba(234, 228, 228, 0.788) 0px 0.125em 0.5em, rgba(239, 238, 238, 0.842) 0px 0px 0px 1px inset;
+
+}
