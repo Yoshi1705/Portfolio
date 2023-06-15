@@ -35,7 +35,7 @@ function Contact() {
      icon = {<BsInfoCircleFill size = {40} />}
     />
 
-    {submit &&  <div className='submit-mssg'><p>"Your message was sent"</p></div>}
+    {submit &&  <div className='submit-mssg'><p>Your message was sent</p></div>}
 
     <div className='contact'>
       <Animate play duration= {1} delay = {1} start = {{transform : 'translatX(-200px)'}} end = {{transform : 'translatX(0px)'}}>
