@@ -18,11 +18,11 @@ function Home() {
     <section id="home" className="home">
       <div className="wrapper">
         <h1 className="animate-character">
-          Hlo, I'm Yoshitha
+          Hello, I'm Yoshitha
           <br />
           Frontend Developer
         </h1>
-        <Animate play duration={1.5} delay={1} 
+        <Animate play duration={2} delay={0.5} 
           start={{transform:'translateY(400px)'}} 
 
           end = {{transform:'translatex(0px)'}}

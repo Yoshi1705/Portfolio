@@ -15,8 +15,8 @@ function Skills() {
           <div key={index} className="skills-inner">
             <Animate
               play
-              duration={1.5}
-              delay={1}
+              duration={2}
+              delay={0.5}
               start={{ transform: "translateX(-200px)" }}
               end={{ transform: "translatex(0px)" }}
             >
