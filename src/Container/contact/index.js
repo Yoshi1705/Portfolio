@@ -1,4 +1,5 @@
-import React,{ useRef } from 'react'
+import React,{ useRef } from 'react';
+import {useState} from 'react';
 import {BsInfoCircleFill} from 'react-icons/bs'
 import Main from '../../Components/Headercontent' ;
 import { Animate } from 'react-simple-animate';
@@ -10,7 +11,7 @@ function Contact() {
 
   const form = useRef();
 
-  const [submit , setsubmit] = "false";
+  const [submit , setsubmit] =  useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -35,7 +36,7 @@ function Contact() {
      icon = {<BsInfoCircleFill size = {40} />}
     />
 
-    {submit &&  <div className='submit-mssg'><p>Your message was sent</p></div>}
+    {submit === false ? null : <div className='submit-mssg'><p>Your message was sent</p></div>}
 
     <div className='contact'>
       <Animate play duration= {1} delay = {1} start = {{transform : 'translatX(-200px)'}} end = {{transform : 'translatX(0px)'}}>
@@ -67,7 +68,7 @@ function Contact() {
             </div>
 
           </div>
-            <button className='buton' onClick={submitHandler} >Submit</button>
+            <button   onClick={submitHandler} >Submit</button>
          </div>
        </form>
     </div>
