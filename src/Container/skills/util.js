@@ -16,7 +16,7 @@
       },
       {
         skill: "REACT",
-        percentage: "50",
+        percentage: "60",
       },
     ],
   },
@@ -55,11 +55,11 @@
       },
       {
         skill:"VERCEL",
-        percentage:"40",
+        percentage:"50",
       },
       {
         skill:"FIREBASE",
-        percentage:"30"
+        percentage:"50"
       }
     ],
   },

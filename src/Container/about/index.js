@@ -5,9 +5,10 @@ import { Animate } from "react-simple-animate";
 import { DiApple, DiGithubBadge } from "react-icons/di";
 import { FaDev, FaDatabase } from "react-icons/fa";
 
-import { Link } from "react-router-dom";
+
 
 import resume from "./resume.pdf";
+import intern from './intern.pdf'
 
 import "./style.css";
 
@@ -17,6 +18,10 @@ function About() {
 
   const openResume = () => {
     window.open(resume, "_blank");
+  };
+
+  const openIntern = () => {
+    window.open(intern, "_blank");
   };
 
   return (
@@ -34,10 +39,18 @@ function About() {
             end={{ transform: "translatex(0px)" }}
           >
             <p>
-              {jobsummary} 
-              <Link to="https://www.dropbox.com/s/g5f6dgalt9w8hfd/Yoshitha%20internship%20certificate.pdf?dl=0" style={{textDecoration:'none',marginLeft:'7px',color:'#FF90BB'}}>
-              See Internship Highlights
-              </Link>
+              {jobsummary}
+              <a
+                 onClick={openIntern}
+                style={{
+                  textDecoration: "none",
+                  marginLeft: "7px",
+                  color: "#FF90BB",
+                }}
+                target="_blank"
+              >
+                See Internship Highlights
+              </a>
             </p>
 
             <button onClick={openResume}>Resume</button>
