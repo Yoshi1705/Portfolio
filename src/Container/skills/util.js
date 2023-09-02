@@ -30,7 +30,7 @@
       },
       {
         skill: "JAVA",
-        percentage: "60",
+        percentage: "40",
       },
       {
         skill:"PYTHON",
@@ -38,7 +38,7 @@
       },
       {
         skill:"MATLAB",
-        percentage:"30"
+        percentage:"20"
       }
     ],
   },
