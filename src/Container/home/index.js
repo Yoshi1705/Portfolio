@@ -31,7 +31,7 @@ function Home() {
      <div className="main-wrapper"> 
       <div className="wrapper">
           <h1
-            style={{ color: "#73BBC9", fontSize: "30px", fontStyle: "italic" }}
+            style={{ color: "#73BBC9", fontSize: "30px", fontFamily : "cursive" }}
           >
             I'm Yoshitha I'm a,
           </h1>
