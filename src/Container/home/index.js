@@ -20,7 +20,7 @@ function Home() {
   };
 
   const [text] = useTypewriter({
-    words: ["Web Developer", "Tech Enthusiastic", "Btech Student"],
+    words: ["Web Developer", "Techie", "Code Explorer","Btech Student"],
     loop: true,
     typeSpeed: 120,
   });

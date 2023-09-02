@@ -113,11 +113,13 @@ button:hover
         margin-left: 0;
         font-size: 25px;
     }
-   
+    .wrapper h1{
+        margin-bottom: 20px;
+    }
     .writer
     {
         margin-left: 0;
-        position: fixed;
+        position: initial;
     }
     .writer-type{
         font-size: 35px;
@@ -125,8 +127,8 @@ button:hover
    .btn
    {
       margin-left: 0;
-      margin-top: 110px;
-    margin-bottom: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
    }
     .mini
     {

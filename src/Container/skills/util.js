@@ -22,7 +22,7 @@
   },
 
   {
-    label: "PROGRAMMING LANGUAGES",
+    label: "TECH STACK",
     data: [
       {
         skill: "C",
