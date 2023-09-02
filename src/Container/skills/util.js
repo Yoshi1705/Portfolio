@@ -34,11 +34,11 @@
       },
       {
         skill:"PYTHON",
-        percentage:"50",
+        percentage:"30",
       },
       {
         skill:"MATLAB",
-        percentage:"50"
+        percentage:"30"
       }
     ],
   },
@@ -59,7 +59,7 @@
       },
       {
         skill:"FIREBASE",
-        percentage:"50"
+        percentage:"30"
       }
     ],
   },

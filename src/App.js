@@ -7,7 +7,7 @@ import Skills from "./Container/skills";
 import Contact from "./Container/contact";
 import NavBar from "./Components/nav";
 import Certificates from "./Container/resume";
-
+import Design from "./Container/home/Design";
  
 
 function App() {
@@ -15,7 +15,8 @@ function App() {
 
   return (
     <div className="App" style ={{height:'100%'}} >
-     
+      
+      <Design />
        <NavBar />
       <Routes>
         <Route index path="/" element={<Home />} />

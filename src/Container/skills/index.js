@@ -6,6 +6,7 @@ import "./style.css";
 import skillData from "./util";
 import { Animate, AnimateKeyframes } from "react-simple-animate";
 
+
 function Skills() {
   return (
     <div className="skills">
@@ -15,8 +16,8 @@ function Skills() {
           <div key={index} className="skills-inner">
             <Animate
               play
-              duration={2}
-              delay={0.5}
+              duration={0.5}
+              
               start={{ transform: "translateX(-200px)" }}
               end={{ transform: "translatex(0px)" }}
             >

@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     padding: 15px;
-    border-bottom: 1px dashed var( --blue-main-color);
+    border-bottom: 1px dashed var(--blue-main-color);
     flex-direction: row;
 }
 

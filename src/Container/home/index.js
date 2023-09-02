@@ -1,42 +1,65 @@
 import React from "react";
 import "./style.css";
-import {Animate} from 'react-simple-animate'
-import {useNavigate} from 'react-router-dom';
+import { Animate } from "react-simple-animate";
+import { useNavigate } from "react-router-dom";
+import { useTypewriter, Cursor } from "react-simple-typewriter"; // Import useTypewriter
+ 
 import img1 from './img.jpg'
 function Home() {
+  const navigate = useNavigate();
 
-    const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/contact");
+  };
 
-    const handleClick = () =>{
-         navigate('/contact')
-    }
+  const secondHandler = () => {
+    window.open(
+      "https://www.linkedin.com/in/yoshitha-peddireddy-6ba645253/",
+      "_blank"
+    );
+  };
 
-     const secondHandler = () =>{
-       window.open("https://www.linkedin.com/in/yoshitha-peddireddy-6ba645253/",'_blank');
-     }
+  const [text] = useTypewriter({
+    words: ["Web Developer", "Tech Enthusiastic", "Btech Student"],
+    loop: true,
+    typeSpeed: 120,
+  });
+
   return (
     <section id="home" className="home">
-      <div className="wrapper">
-        <h1 className="animate-character">
-          Hello, I'm Yoshitha
-          <br />
-          Frontend Developer
-        </h1>
-        <Animate play duration={2} delay={0.5} 
-          start={{transform:'translateY(400px)'}} 
 
-          end = {{transform:'translatex(0px)'}}
-        >
-        <div className="btn">
-          <button onClick={handleClick}>Hire Me</button>
-          <button onClick = {secondHandler}>Let's Connect</button>
-        </div>
-        </Animate>
-         
+     <div className="main-wrapper"> 
+      <div className="wrapper">
+          <h1
+            style={{ color: "#73BBC9", fontSize: "30px", fontStyle: "italic" }}
+          >
+            I'm Yoshitha I'm a,
+          </h1>
       </div>
-      <div className="mini">
+
+        <div   className="writer">
+          <span style={{ color: "rgb(145,60,115)" ,fontWeight:'bold'  }} className="writer-type">{text}</span>
+          <span>
+            <Cursor />
+          </span>
+        </div>
+        
+     
+      <div className="btn"  >
+        <button onClick={handleClick}>Hire Me</button>
+        <button onClick={secondHandler}>Let's Connect</button>
+      </div>
+      
+    </div>
+
+     
+    <div className="mini">
          <img  src = {img1} className="img-mini"/>
       </div>
+    
+
+     
+       
     </section>
   );
 }
