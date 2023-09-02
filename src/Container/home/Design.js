@@ -88,7 +88,7 @@ const Design = () =>{
                         type: "circle",
                         options: {
                             polygon :{
-                              sides : 5  
+                              sides : 2  
                             },
                             image : {
                                 src : "",

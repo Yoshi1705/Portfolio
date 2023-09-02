@@ -20,7 +20,7 @@ function Home() {
   };
 
   const [text] = useTypewriter({
-    words: ["Web Developer", "Techie", "Code Explorer","Btech Student"],
+    words: ["WebDeveloper", "Techie", "CodeExplorer","BtechStudent"],
     loop: true,
     typeSpeed: 120,
   });
@@ -38,7 +38,7 @@ function Home() {
       </div>
 
         <div   className="writer">
-          <span style={{ color: "rgb(145,60,115)" ,fontWeight:'bold'  }} className="writer-type">{text}</span>
+          <span style={{ color: "rgb(205,92,155)" ,fontWeight:'bold'  }} className="writer-type">{text}</span>
           <span>
             <Cursor />
           </span>

@@ -22,7 +22,7 @@
    margin-left: 80px;
 }
 .wrapper h1{
-    marginBottom : 30px;
+    margin-bottom : 20px;
 }
 .writer
 {
@@ -137,6 +137,7 @@ button:hover
     }
     .mini img{
         margin-bottom: 80px;
+        width : 60%;
     }
    button{
     font-size: 1.5rem;
