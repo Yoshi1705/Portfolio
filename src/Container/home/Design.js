@@ -55,7 +55,7 @@ const Design = () =>{
                 },
                 particles: {
                     color: {
-                        value: "#73BBC9",
+                        value: ["#73BBC9","#ff00ff","#00fff"]
                     },
                     links: {
                         color: "#73BBC9",
@@ -86,6 +86,16 @@ const Design = () =>{
                     },
                     shape: {
                         type: "circle",
+                        options: {
+                            polygon :{
+                              sides : 5  
+                            },
+                            image : {
+                                src : "",
+                                width : 100,
+                                height : 100
+                            }
+                        }
                     },
                     size: {
                         value: { min: 1, max: 5 },
