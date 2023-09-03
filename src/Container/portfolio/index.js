@@ -56,7 +56,7 @@ function Projects() {
 
           <Link
             className="link-style"
-            to="https://universitywebsite-omega.vercel.app/"
+            to="https://corpcomment.vercel.app/"
           >
             <div className="image-container">
               <img src={img3} />
