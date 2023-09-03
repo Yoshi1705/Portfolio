@@ -62,11 +62,11 @@ function Projects() {
               <img src={img3} />
 
               <div className="text-container">
-                <h3>University Website</h3>
+                <h3>Feedback Form</h3>
                 <p>
-                  The university website showcases courses offered, a blog for
-                  news and updates, a contact section for inquiries,
-                  testimonials from students, and highlights the facilities
+                  The feedback form consists of all the feedbacks given by the
+                  users and the information is fetched from the api.Users can
+                  upvote the feedbacks and post their feedbacks as well
                 </p>
               </div>
             </div>
