@@ -38,7 +38,7 @@ function Projects() {
 
           <Link
             className="link-style"
-            to="https://fantastic-cocada-ea19ed.netlify.app/"
+            to="https://ratmaze.vercel.app/"
           >
             <div className="image-container">
               <img src={img2} />
