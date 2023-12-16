@@ -26,7 +26,7 @@ function NavBar() {
       <AppBar position="static" style={{backgroundColor : "var(--blue-nav-color)",display : "flex"}} >
         <Toolbar>
           <IconButton edge="start" color="black" onClick={handleClick} sx={{ marginRight: 2 }}>
-            {toggle ? <HiX size={30} /> : <FaBars size={30} />}
+            {toggle ? <HiX size={30} /> : <FaBars size={30} style={{color : "var(--blue-main-color)"}} />}
           </IconButton>
           <Link className="icon" to="/">
             <FaReact size={30} />
