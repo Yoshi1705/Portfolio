@@ -14,7 +14,7 @@ import "./style.css";
 
 function About() {
   const jobsummary =
-    "Iam a third-year ECE student with a strong foundation in programming. I started with C language in my first year and then expanded my skills by learning Java. In my second year,I focused on Data Structures and Algorithms, as well as HTML and CSS for web development. In my third year, I mastered JavaScript and React, and during a one-month internship at Spondias Company, I successfully recreated their website using React. I am now working on my portfolio to showcase my skills in web development. I am passionate about coding and eager to contribute to innovative projects in the software development field";
+    "I'm a final-year BTech student in Electronics and Communications Engineering at JNTUK with a strong passion for computer science and programming. I hold certifications in Java, Python, and JavaScript from HackerRank and currently serve as a Subject Matter Expert at Chegg, assisting students in various computer science topics. I've honed my skills through practical experiences, including rebuilding a company website with React and Bootstrap during a previous internship. Now, as a Software Development Engineer at Code Inbound LLP, I specialize in ReactJS, Redux, TypeScript, and JavaScript for web development, with expertise in API integration and documentation. My dedication, enthusiasm for learning, and problem-solving mindset drive me to excel in any challenge. I'm on the lookout for a fulfilling role in computer science where I can contribute and grow. Let's connect and explore opportunities together!";
 
   const openResume = () => {
     window.open(resume, "_blank");

@@ -30,39 +30,57 @@
       },
       {
         skill: "JAVA",
-        percentage: "40",
+        percentage: "80",
       },
       {
         skill:"PYTHON",
-        percentage:"30",
+        percentage:"50",
       },
       {
         skill:"MATLAB",
-        percentage:"20"
+        percentage:"50"
       }
     ],
   },
   {
-    label: "OTHER TECHNICALSKILLS",
+    label : "BACKEND SKILLS",
+    data :[
+      {
+        skill : "NODEJS",
+        percentage : "50",
+      },
+      {
+        skill : "EXPRESS",
+        percentage : '50',
+      }
+    ]
+  },
+  {
+    label: "SOFTWARE TOOLS",
     data: [
       {
         skill: "GIT",
         percentage: "60",
       },
       {
-        skill: "GITHUB",
-        percentage: "60",
-      },
-      {
-        skill:"VERCEL",
-        percentage:"50",
-      },
-      {
-        skill:"FIREBASE",
-        percentage:"30"
+        skill:"SWAGGER",
+        percentage:"60"
       }
     ],
   },
+  {
+    label: "HARD SKILLS",
+    data: [
+      {
+        skill: "OPERATING SYSTEMS",
+        percentage: "60",
+      },
+      {
+        skill:"COMPUTER NETWORKS",
+        percentage:"60"
+      }
+    ],
+  }
 ];
 
 export default skillData;

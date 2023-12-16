@@ -1,72 +1,49 @@
 import React, { useState } from "react";
-
-import {FaBars, FaReact } from "react-icons/fa";
-
-import {HiX} from "react-icons/hi";
-
+import { AppBar, Toolbar, IconButton, Typography, Drawer, List, ListItem, ListItemText } from "@mui/material";
+import { FaReact, FaBars } from "react-icons/fa";
+import { HiX } from "react-icons/hi";
 import { Link } from "react-router-dom";
-
-import './style.css';
-
+import "./style.css";
 
 const data = [
-  {
-    label: "HOME",
-    to: "/",
-  },
-  {
-    label: "ABOUT ME",
-    to: "about",
-  },
-  {
-    label: "SKILLS",
-    to: "/skills",
-  },
-  {
-    label: "CERTIFICATES",
-    to: "/certificates",
-  },
-  {
-    label: "PROJECTS",
-    to: "/projects",
-  },
-  {
-    label: "CONTACT",
-    to: "/contact",
-  },
+  { label: "HOME", to: "/" },
+  { label: "ABOUT ME", to: "/about" },
+  { label: "SKILLS", to: "/skills" },
+  { label: "CERTIFICATES", to: "/certificates" },
+  { label: "PROJECTS", to: "/projects" },
+  { label: "CONTACT", to: "/contact" },
 ];
 
 function NavBar() {
+  const [toggle, setToggle] = useState(false);
 
-  const [toggle,setToggle] = useState(false);
-
-  const handleClick = () =>{
+  const handleClick = () => {
     setToggle(!toggle);
-  }
+  };
+
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <Link className="icon" to="/">
-          <FaReact size={30} />
-        </Link>
-      </div>
+    <>
+      <AppBar position="static" style={{backgroundColor : "var(--blue-nav-color)",display : "flex"}} >
+        <Toolbar>
+          <IconButton edge="start" color="black" onClick={handleClick} sx={{ marginRight: 2 }}>
+            {toggle ? <HiX size={30} /> : <FaBars size={30} />}
+          </IconButton>
+          <Link className="icon" to="/">
+            <FaReact size={30} />
+          </Link>
+        </Toolbar>
+      </AppBar>
 
-       <ul className= {`nav-menu ${toggle? "active":""}`}>
-        {data.map((item,key) =>(
-          <li key = {key} className="nav-list">
-               <Link to = {item.to} className="nav-links">
-                {item.label}
-               </Link>
-          </li>
-        ))}
-     
-         
-      </ul> 
-
-      <div className="hamburger-menu" onClick={handleClick}>
-           {toggle?<HiX size = {30}/>:<FaBars size = {30}/>}
-      </div>
-    </nav>
+      <Drawer anchor="top" open={toggle} onClose={handleClick}>
+        <List style={{backgroundColor : "var(--blue-background-color)"}}>
+          {data.map((item, key) => (
+            <ListItem key={key} button component={Link} to={item.to} onClick={handleClick} style={{color : "var(--blue-text-color)"}}>
+              <ListItemText primary={item.label} />
+            </ListItem>
+          ))}
+        </List>
+      </Drawer>
+    </>
   );
 }
 
