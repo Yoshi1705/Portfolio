@@ -10,7 +10,6 @@ import Certificates from "./Container/resume";
 import Design from "./Container/home/Design";
 
 function App() {
-  const navigate = useNavigate();
   const location = useLocation();
 
   // Determine if the current route is the home page
@@ -18,8 +17,8 @@ function App() {
 
   return (
     <div className="App" style={{ height: '100%' }}>
-      {isHomePage && <Design />}
       <NavBar />
+      {isHomePage && <Design />}
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

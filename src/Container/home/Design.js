@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim";
-
+import './design.css';
 const Design = () =>{
 
     const particlesInit = useCallback(async engine => {
@@ -19,7 +19,7 @@ const Design = () =>{
     }, []);
 
     return(
-        <div>
+        <div className="design-container">
             <Particles
             id="tsparticles"
             init={particlesInit}
@@ -71,7 +71,7 @@ const Design = () =>{
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: 2,
                         straight: false,
                     },
                     number: {
@@ -88,7 +88,7 @@ const Design = () =>{
                         type: "circle",
                         options: {
                             polygon :{
-                              sides : 2  
+                              sides : 1  
                             },
                             image : {
                                 src : "",
@@ -98,7 +98,7 @@ const Design = () =>{
                         }
                     },
                     size: {
-                        value: { min: 1, max: 5 },
+                        value: { min: 1, max: 3 },
                     },
                 },
                 detectRetina: true,
